@@ -14,7 +14,8 @@ echo "install virtualenv"
 apt install python3-venv -y
 
 echo "install stuff"
-apt install libgl1-mesa-glx
+apt install -y libgl1
+apt install -y libglib2.0-0
 
 echo "create virtual environment"
 python3 -m venv .venv
