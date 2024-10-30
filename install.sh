@@ -1,17 +1,16 @@
 echo "update environment"
 apt update -y
 
-echo "install git"
-apt install git -y
+echo "install dependencies"
+apt install -y git 
+apt install -y python3 
+apt install -y python3-pip 
+apt install -y python3-venv 
+apt install wget
 
-echo "install python"
-apt install python3 -y
-
-echo "install pip"
-apt install python3-pip -y
-
-echo "install virtualenv"
-apt install python3-venv -y
+echo "setup minio"
+wget https://dl.min.io/server/minio/release/linux-amd64/archive/minio_20241013133411.0.0_amd64.deb -O minio.deb
+mkdir ~/minio
 
 echo "install stuff"
 apt install -y libgl1
