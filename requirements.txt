@@ -3,3 +3,4 @@ minio
 fastapi 
 uvicorn
 python-dotenv
+requests
