@@ -1,6 +1,9 @@
 echo "update environment"
 apt update -y
 
+echo "install git"
+apt install git -y
+
 echo "install python"
 apt install python3 -y
 
